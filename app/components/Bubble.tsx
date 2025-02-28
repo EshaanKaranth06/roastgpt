@@ -11,18 +11,7 @@ interface BubbleProps {
     message: Message
 }
 
-const formatTime = (date: Date): string => {
-    try{
-        return new Intl.DateTimeFormat('en-US',{
-            hour: '2-digit',
-            minute: '2-digit',
-            hour12: true
-        }).format(new Date(date))
-    } catch(error){
-        console.error('Date formatting error:',error)
-        return ''
-    }
-}
+
 
 const Bubble: React.FC<BubbleProps> = ({ message }) => {
     const [formattedContent, setFormattedContent] = useState(message.content)
