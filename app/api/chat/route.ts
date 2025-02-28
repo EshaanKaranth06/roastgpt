@@ -3,7 +3,7 @@ import { DataAPIClient } from "@datastax/astra-db-ts";
 
 const HF_API_KEY = process.env.HF_API_KEY || '';
 const ASTRA_DB_NAMESPACE = process.env.ASTRA_DB_NAMESPACE || '';
-const ASTRA_DB_COLLECTION = 'f1gpt2';
+const ASTRA_DB_COLLECTION = 'roast';
 const ASTRA_DB_API_ENDPOINT = process.env.ASTRA_DB_API_ENDPOINT || '';
 const ASTRA_DB_APPLICATION_TOKEN = process.env.ASTRA_DB_APPLICATION_TOKEN || '';
 
