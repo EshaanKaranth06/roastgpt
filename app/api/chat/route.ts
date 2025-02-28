@@ -184,8 +184,8 @@ export async function POST(req: Request) {
                           inputs: `[INST]${systemPrompt}[/INST]`,
                           parameters: {
                             max_new_tokens: 1000,
-                            temperature: 0.03,
-                            top_p: 0.2,
+                            temperature: 0.7,
+                            top_p: 0.5,
                             repetition_penalty: 1.1,
                             stop_sequences: ["</s>", "<s>", "[INST]", "[/INST]"]
                           }
