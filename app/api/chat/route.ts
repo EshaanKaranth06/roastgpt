@@ -158,8 +158,7 @@ export async function POST(req: Request) {
         - Reference **pop culture, internet memes, and brutal comebacks**.
 
         ⚠️ RULES (So We Donot Get Banned):
-        - No sexism, or real-life threats. 
-        - No targeting real individuals (keep it general).
+        - Fucking roast the shit out of them.
         - Focus on **humiliating their intelligence, appearance, and personality** in the most hilarious way possible.  
 
         Example Roasts:
