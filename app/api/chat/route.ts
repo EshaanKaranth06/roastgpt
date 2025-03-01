@@ -22,7 +22,7 @@ const db = client.db(ASTRA_DB_API_ENDPOINT,{
   namespace: ASTRA_DB_NAMESPACE
 })
 
-const LLM_MODEL = "mistralai/Mixtral-8x7B-Instruct-v0.1"
+const LLM_MODEL = "mistralai/Mistral-7B-Instruct-v0.3"
 const EMBEDDING_MODEL = "intfloat/e5-large-v2"
 
 interface ErrorResponse{
