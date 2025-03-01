@@ -103,7 +103,7 @@ export async function POST(req: Request) {
       )
 
       const results = await cursor.toArray()
-      relevantDocuments = results.filter(doc => doc.$similarity && doc.$similarity > 0.7)
+      relevantDocuments = results.filter(doc => doc.$similarity && doc.$similarity > 0.85)
       .map((doc, index) => ({
         content: doc.text || "",
         similarity: doc.$similarity || 0,
@@ -184,7 +184,7 @@ export async function POST(req: Request) {
                           inputs: `[INST]${systemPrompt}[/INST]`,
                           parameters: {
                             max_new_tokens: 1000,
-                            temperature: 0.75,
+                            temperature: 0.5,
                             top_p: 0.7,
                             repetition_penalty: 1.5,
                             stop_sequences: ["</s>", "<s>", "[INST]", "[/INST]"]
