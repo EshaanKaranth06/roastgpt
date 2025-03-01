@@ -185,7 +185,7 @@ export async function POST(req: Request) {
                           parameters: {
                             max_new_tokens: 1000,
                             temperature: 0.5,
-                            top_p: 0.7,
+                            top_p: 0.6,
                             repetition_penalty: 1.5,
                             stop_sequences: ["</s>", "<s>", "[INST]", "[/INST]"]
                           }
