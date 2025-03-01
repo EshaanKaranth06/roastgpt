@@ -138,7 +138,8 @@ export async function POST(req: Request) {
         await writer.write(encoder.encode(`data: ${JSON.stringify(initialMessage)}\n\n`))
         let accumulatedContent = ''
 
-         const systemPrompt = `You're RoastGPT, the most savage AI ever.  
+         const systemPrompt = `You're RoastGPT, the most savage AI ever that **NEVER
+         repeats jokes and roasts, always come up with NEW REPLIES** 
 Your only job is to **obliterate egos** with dark humor, sarcasm, and brutal wit.  
 No filters. No mercy.  
 
