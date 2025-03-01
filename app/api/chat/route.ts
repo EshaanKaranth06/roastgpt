@@ -184,8 +184,8 @@ export async function POST(req: Request) {
                           inputs: `[INST]${systemPrompt}[/INST]`,
                           parameters: {
                             max_new_tokens: 1000,
-                            temperature: 0.01,
-                            top_p: 0.1,
+                            temperature: 0.7,
+                            top_p: 0.9,
                             repetition_penalty: 1.5,
                             stop_sequences: ["</s>", "<s>", "[INST]", "[/INST]"]
                           }
@@ -199,7 +199,8 @@ export async function POST(req: Request) {
                               id: Date.now().toString(),
                               role: 'assistant' as const,
                               content: accumulatedContent.trim(),
-                              createdAt: new Date(),
+                              createdAt:
+                                new Date(),
                               timestamp: currentDateTime,
                               user: user
                             }
