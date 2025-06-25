@@ -27,10 +27,6 @@ const RData: string[] = [
   "https://www.jumpspeak.com/blog/english-swear-words",
   "https://www.lingoda.com/blog/en/how-to-swear-in-english/",
   "https://www.buzzfeed.com/rorylewarne/british-swearwords-defined",
-  "https://parade.com/living/dirty-jokes",
-  "https://www.laughfactory.com/jokes/sex-jokes",
-  "https://bestlifeonline.com/dirty-jokes/",
-  "https://www.wattpad.com/43377956-dirty-jokes-pick-up-lines",
   "https://www.countryliving.com/life/entertainment/a62000506/ultimate-dark-humor-jokes/",
   "https://parade.com/1295709/marynliles/dark-humor-jokes/",
   "https://www.rd.com/article/dark-jokes/"
